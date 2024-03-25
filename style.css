@@ -1,0 +1,422 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url(images/noiseporn-JNuKyKXLh8U-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 140px 0;
+    background-color: rgba(253, 253, 253, 0.975);
+    height: 100vh;
+}
+
+.hero .content {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 290px;
+    color: white;
+    
+}
+
+.hero h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff00ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.lineup {
+    background-color: #000;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.lineup .content {
+    text-align: center;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.lineup h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.lineup .cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+.lineup .card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 0 0 10px #ff00ff;
+}
+
+.lineup .card img {
+    max-width: 100%;
+    border-radius: 5px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.lineup .card .info {
+    margin-top: 20px;
+}
+
+.lineup .card h3 {
+    font-size: 24px;
+}
+
+.lineup .card p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.gallery {
+    background-color: #fff;
+    padding: 0;
+    height: 100vh;
+}
+
+.gallery .content {
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+    
+    overflow: hidden;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 650px;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+}
+
+.mySlides img {
+    width: 100%;
+    height:100%;
+   object-fit:fill;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.text {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.faqs {
+    background-color: #f9f9f9;
+    padding: 100px 0;
+}
+
+.faqs .content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faqs h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.faq-list {
+    text-align: left;
+}
+
+.faq {
+    margin-bottom: 20px;
+}
+
+.faq h3 {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.faq p {
+    font-size: 16px;
+    display: none;
+}
+.ask-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff00ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.contact {
+    background-color: #fff;
+    padding: 100px 0;
+}
+
+.contact .content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact .contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact .info {
+    max-width: 300px;
+}
+
+.contact .info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact .info p {
+    font-size: 16px;
+}
+
+.comment-box {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.comment-box textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+.comment-box button {
+    padding: 10px 20px;
+    background-color: #ff00ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Add more styles as needed */
+.footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.toast {
+    visibility: hidden;
+    position: fixed;
+    margin-top: 45px;
+    top: 25px;
+    right: 20px;
+    background-color: rgb(0, 0, 0);
+    color: #ff00ff;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 999;
+    font-weight: bold;
+}
+
+.neon-pink {
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+
+.show-toast {
+    visibility: visible;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { bottom: -100px; opacity: 0; }
+    to { bottom: 30px; opacity: 1; }
+}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 999; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Style the input field and button inside the modal */
+  input[type=email], #submitEmail {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input[type=email]:focus {
+    outline: none;
+    border: 1px solid #555;
+  }
+  
+  #submitEmail {
+    background-color: #ff00ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #submitEmail:hover {
+    background-color: #cc00cc;
+  }
+  .fa-brands{
+    font-size: 2rem;
+  }
